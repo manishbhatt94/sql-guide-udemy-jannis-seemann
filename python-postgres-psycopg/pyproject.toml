@@ -1,0 +1,19 @@
+[project]
+name = "python-postgres-psycopg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Manish Bhatt", email = "manishbhatt594@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "psycopg[binary,pool]>=3.3.3",
+]
+
+[tool.uv]
+package = false
+
+[build-system]
+requires = ["uv_build>=0.11.7,<0.12.0"]
+build-backend = "uv_build"
