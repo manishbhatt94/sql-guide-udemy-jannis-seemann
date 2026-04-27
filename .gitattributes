@@ -1,0 +1,28 @@
+# Default behavior: auto-detect text files and normalize line endings
+* text=auto
+
+# Python & Config: Force LF (crucial for cross-platform Python)
+*.py text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Shell scripts: Must have LF to run on Linux/WSL
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Git specific
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Graphics/Binaries: Mark as binary to prevent corruption
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
