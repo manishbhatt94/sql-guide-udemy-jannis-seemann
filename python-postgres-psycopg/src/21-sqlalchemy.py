@@ -20,7 +20,10 @@ class Student(Base):
 
 
 engine = create_engine(
-    "postgresql+psycopg://postgres:manish@localhost/language_school2", echo=True
+    "postgresql+psycopg://postgres:manish@localhost/language_school2",
+    echo=True,
+    # echo=True|False --> Controls whether SQLAlchemy prints logs, including
+    # generated SQL statements logs.
 )
 with Session(engine) as session:
     # print("Fetch all students:")
