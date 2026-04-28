@@ -32,7 +32,11 @@ as a bunch of stand-alone scripts.
 Install [psycopg](https://pypi.org/project/psycopg/) using:
 
 ```bash
+# Install `psycopg`:
 uv add "psycopg[binary,pool]"
+
+# Install `SQLAlchemy`:
+uv add SQLAlchemy
 ```
 
 This creates (if not already present) a package lockfile `uv.lock`, and also
@@ -44,13 +48,16 @@ mentions the package just added in the `pyproject.toml` file.
 uv tree
 
  python-postgres-psycopg  uv tree
-Resolved 6 packages in 1ms
+Resolved 8 packages in 1ms
 python-postgres-psycopg v0.1.0
-└── psycopg[binary, pool] v3.3.3
-    ├── tzdata v2026.2
-    ├── psycopg-binary v3.3.3 (extra: binary)
-    └── psycopg-pool v3.3.0 (extra: pool)
-        └── typing-extensions v4.15.0
+├── psycopg[binary, pool] v3.3.3
+│   ├── tzdata v2026.2
+│   ├── psycopg-binary v3.3.3 (extra: binary)
+│   └── psycopg-pool v3.3.0 (extra: pool)
+│       └── typing-extensions v4.15.0
+└── sqlalchemy v2.0.49
+    ├── greenlet v3.5.0
+    └── typing-extensions v4.15.0
 ```
 
 
