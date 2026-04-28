@@ -8,6 +8,25 @@ Author: Jannis Seemann
 
 ---
 
+### Connect to PostgreSQL using `psql`:
+
+Using keyword/value options:
+
+```bash
+# Syntax:
+# psql -U [username] -h [host] -p [port] -W [database_name]
+
+# -W --> Prompts for password
+
+psql -U postgres -h localhost -p 5432 -W language_school
+```
+
+Using connection URI string:
+
+```bash
+ psql "postgresql://postgres:manish@localhost:5432/language_school"
+```
+
 ### Backup & Restore of a PostgreSQL Database
 
 #### Backup using `pg_dump`
