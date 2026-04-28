@@ -29,7 +29,8 @@ as a bunch of stand-alone scripts.
 
 #### Add dependencies
 
-Install [psycopg](https://pypi.org/project/psycopg/) using:
+Install [psycopg](https://pypi.org/project/psycopg/) and
+[SQLAlchemy](https://pypi.org/project/SQLAlchemy/) using:
 
 ```bash
 # Install `psycopg`:
